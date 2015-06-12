@@ -1,0 +1,18 @@
+c:\users\raghu_000\documents\visual studio 2013\Projects\RealTimeObjKinect\RealTimeObjKinect\bin\Debug\RealTimeObjKinect.exe.config
+C:\Users\raghu_000\Documents\Visual Studio 2013\Projects\RealTimeObjKinect\RealTimeObjKinect\obj\Debug\MainWindow.baml
+C:\Users\raghu_000\Documents\Visual Studio 2013\Projects\RealTimeObjKinect\RealTimeObjKinect\obj\Debug\MainWindow.g.cs
+C:\Users\raghu_000\Documents\Visual Studio 2013\Projects\RealTimeObjKinect\RealTimeObjKinect\obj\Debug\App.g.cs
+C:\Users\raghu_000\Documents\Visual Studio 2013\Projects\RealTimeObjKinect\RealTimeObjKinect\obj\Debug\RealTimeObjKinect_MarkupCompile.cache
+C:\Users\raghu_000\Documents\Visual Studio 2013\Projects\RealTimeObjKinect\RealTimeObjKinect\obj\Debug\RealTimeObjKinect.g.resources
+C:\Users\raghu_000\Documents\Visual Studio 2013\Projects\RealTimeObjKinect\RealTimeObjKinect\obj\Debug\RealTimeObjKinect.Properties.Resources.resources
+C:\Users\raghu_000\Documents\Visual Studio 2013\Projects\RealTimeObjKinect\RealTimeObjKinect\obj\Debug\RealTimeObjKinect.csproj.GenerateResource.Cache
+C:\Users\raghu_000\Documents\Visual Studio 2013\Projects\RealTimeObjKinect\RealTimeObjKinect\bin\Debug\RealTimeObjKinect.exe
+C:\Users\raghu_000\Documents\Visual Studio 2013\Projects\RealTimeObjKinect\RealTimeObjKinect\bin\Debug\RealTimeObjKinect.pdb
+C:\Users\raghu_000\Documents\Visual Studio 2013\Projects\RealTimeObjKinect\RealTimeObjKinect\obj\Debug\RealTimeObjKinect.exe
+C:\Users\raghu_000\Documents\Visual Studio 2013\Projects\RealTimeObjKinect\RealTimeObjKinect\obj\Debug\RealTimeObjKinect.pdb
+C:\Users\raghu_000\Documents\Visual Studio 2013\Projects\RealTimeObjKinect\RealTimeObjKinect\bin\Debug\Microsoft.Kinect.dll
+C:\Users\raghu_000\Documents\Visual Studio 2013\Projects\RealTimeObjKinect\RealTimeObjKinect\bin\Debug\Microsoft.Kinect.xml
+C:\Users\raghu_000\documents\visual studio 2013\Projects\RealTimeObjKinect\RealTimeObjKinect\obj\Debug\RealTimeObjKinect.csprojResolveAssemblyReference.cache
+C:\Users\raghu_000\Documents\GitHub\kinect_recognition\RealTimeObjKinect\bin\Debug\RealTimeObjKinect.exe.config
+C:\Users\raghu_000\Documents\GitHub\kinect_recognition\RealTimeObjKinect\obj\Debug\RealTimeObjKinect.exe
+C:\Users\raghu_000\Documents\GitHub\kinect_recognition\RealTimeObjKinect\obj\Debug\RealTimeObjKinect.pdb

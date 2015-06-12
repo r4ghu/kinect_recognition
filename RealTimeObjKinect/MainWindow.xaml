@@ -1,0 +1,52 @@
+﻿<Window x:Class="RealTimeObjKinect.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Real Time Object Recognition" Height="440" Width="664.67">
+    <Grid>
+        <TabControl HorizontalAlignment="Left" Height="363" Margin="10,10,0,0" VerticalAlignment="Top" Width="637">
+            <TabItem Header="Learning">
+                <Grid Background="#FFE5E5E5" Margin="0,0,0,-2">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="102*"/>
+                        <ColumnDefinition Width="491*"/>
+                    </Grid.ColumnDefinitions>
+                    <Image x:Name="LearningImageOne" HorizontalAlignment="Left" Height="195" Margin="10,36,0,0" VerticalAlignment="Top" Width="219" Grid.ColumnSpan="2"/>
+                    <Image x:Name="LearningImageTwo" Grid.Column="1" HorizontalAlignment="Left" Height="193" Margin="135,38,0,0" VerticalAlignment="Top" Width="212"/>
+                    <ListBox x:Name="LearnedObjectsList" Grid.Column="1" HorizontalAlignment="Left" Height="161" Margin="369,41,0,0" VerticalAlignment="Top" Width="136"/>
+                    <Label Content="Background image" HorizontalAlignment="Left" Margin="8,10,0,0" VerticalAlignment="Top" Grid.ColumnSpan="2" Width="157"/>
+                    <Label Content="Image with object to learn" Grid.Column="1" HorizontalAlignment="Left" Margin="134,10,0,0" VerticalAlignment="Top" Width="218"/>
+                    <Button x:Name="LearningImageOneButton" Content="Load Image" Grid.Column="1" HorizontalAlignment="Left" Margin="46,236,0,0" VerticalAlignment="Top" Width="75" RenderTransformOrigin="0.067,0.364" Click="LearningImageOneButton_Click"/>
+                    <Button x:Name="LearningImageTwoButton" Content="Load Image" Grid.Column="1" HorizontalAlignment="Left" Margin="272,238,0,0" VerticalAlignment="Top" Width="75" Click="LearningImageTwoButton_Click"/>
+                    <Label Content="Learned objects" Grid.Column="1" HorizontalAlignment="Left" Margin="369,10,0,0" VerticalAlignment="Top" Width="120"/>
+                    <Button x:Name="LearnObjectButton" Content="Learn" Grid.Column="1" HorizontalAlignment="Left" Margin="434,274,0,0" VerticalAlignment="Top" Width="75" Click="LearnObjectButton_Click"/>
+                    <Button x:Name="DeleteObjectButton" Content="Delete" Grid.Column="1" HorizontalAlignment="Left" Margin="434,301,0,0" VerticalAlignment="Top" Width="75" Click="DeleteObjectButton_Click"/>
+                    <TextBox x:Name="ObjectNameText" Grid.Column="1" HorizontalAlignment="Left" Height="23" Margin="369,238,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="140" />
+                    <Label Content="Name of object to learn" Grid.Column="1" HorizontalAlignment="Left" Margin="369,207,0,0" VerticalAlignment="Top" Height="24"/>
+                </Grid>
+            </TabItem>
+            <TabItem Header="Recognition">
+                <Grid Background="#FFE5E5E5" Margin="0,0,-9,-1">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="7*"/>
+                        <ColumnDefinition Width="22*"/>
+                        <ColumnDefinition Width="167*"/>
+                    </Grid.ColumnDefinitions>
+                    <TextBlock x:Name="AnalysisResultsText" HorizontalAlignment="Left" Margin="207,55,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="60" Width="284" RenderTransformOrigin="0.47,0.401" Grid.Column="2"/>
+                    <Label Content="What image recognizer finds" HorizontalAlignment="Left" Margin="202.478,17,0,0" VerticalAlignment="Top" Grid.Column="2"/>
+                    <Label Content="Image to Analyze" HorizontalAlignment="Left" Margin="10,17,0,0" VerticalAlignment="Top" Grid.ColumnSpan="3"/>
+                    <!--<Button x:Name="AnalyzeButton" Content="Analyze Image" HorizontalAlignment="Left" Margin="326.478,251,0,0" VerticalAlignment="Top" Width="114" RenderTransformOrigin="0.067,0.364" Grid.Column="2" Click="AnalyzeButton_Click"/>-->
+
+                    <Image x:Name="AnalysisImage" HorizontalAlignment="Left" Height="184" Margin="0,48,0,0" VerticalAlignment="Top" Width="250" Grid.ColumnSpan="2" Grid.Column="1"/>
+                    <Viewbox Grid.Column="2" HorizontalAlignment="Left" Height="211" Margin="202,115,0,0" VerticalAlignment="Top" Width="333">
+                        <Image x:Name="DepthImage" MouseLeftButtonUp="Depth_MouseUp" />
+                    </Viewbox>
+                    <TextBlock x:Name="Position" HorizontalAlignment="Left" Margin="10,262,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="240" Height="50" Grid.Column="1" Grid.ColumnSpan="2"><Run Text="Depth Pixel Coordinates (by point click) &amp;"/><LineBreak/><Run Text="Depth of the selected Pixel"/><LineBreak/><Run Text="(Click on the depth Image to get depth)"/></TextBlock>
+                    <Button Content="Save Feed" Grid.Column="2" HorizontalAlignment="Left" Margin="416,23,0,0" VerticalAlignment="Top" Width="75" RenderTransformOrigin="0.28,1.55" Click="onClick"/>
+                    <TextBox Name="DepthChange" Grid.Column="2" HorizontalAlignment="Left" Height="23" Margin="99,239,0,0" TextWrapping="Wrap" Text="3000" VerticalAlignment="Top" Width="36" TextChanged="TextBox_TextChanged" RenderTransformOrigin="2.972,0.522"/>
+                    <Label Content="Depth Settings (&gt;500 mm) " Grid.Column="1" HorizontalAlignment="Left" Margin="10,236,0,0" VerticalAlignment="Top" Grid.ColumnSpan="2" Width="156"/>
+                    <Label Content="mm" Grid.Column="2" HorizontalAlignment="Left" Margin="140,236,0,0" VerticalAlignment="Top"/>
+                </Grid>
+            </TabItem>
+        </TabControl>
+    </Grid>
+</Window>

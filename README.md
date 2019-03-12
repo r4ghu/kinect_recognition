@@ -3,7 +3,7 @@ This application helps you train any new objects for recognition and use Kinect 
 
 A part of this code is used from http://eyesbot.com/blog/?preload=motion_tracking.txt under Creative Commons License. 
 
-Working:
+## Working
 
 Make sure that before starting the application Kinect v2 is connected to the USB 3.0 port and Kinect SDK is installed.
 

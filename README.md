@@ -1,5 +1,5 @@
 # kinect_recognition
-This application helps you train any new objects for recognition and use Kinect v2 for the real time object recognition.
+This application helps train any new objects for recognition and use Kinect v2 for the real time object recognition.
 
 A part of this code is used from http://eyesbot.com/blog/?preload=motion_tracking.txt under Creative Commons License. 
 
